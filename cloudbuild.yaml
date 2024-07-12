@@ -29,7 +29,7 @@ steps:
       - '-c'
       - |
         echo "Step 3: Authenticating to GKE..."
-        gcloud container clusters get-credentials k8s-cluster --region us-central1-c --project adv-cloud-k8s
+        gcloud container clusters get-credentials k8s-cluster --region us-central1-c
         echo "Authenticated to GKE successfully."
 
   # Step 4: Apply Kubernetes manifests
