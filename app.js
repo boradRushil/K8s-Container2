@@ -13,7 +13,7 @@ const cleanKey = (key) => key.trim().replace(/^['"]+|['"]+$/g, '');
 
 app.post('/calculate', (req, res) => {
     const { file, product } = req.body;
-    console.log("Calculate API called with file:", file);
+    console.log("Calculate API called with file", file);
     if (!file || !product) {
         return res.status(400).json({ error: "Invalid JSON input." });
     }
